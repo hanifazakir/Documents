@@ -1,0 +1,1 @@
+this document consists of all the informations related to angular 8 
