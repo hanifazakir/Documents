@@ -1,1 +1,2 @@
 this document consists of all the informations related to angular 8 
+angular.json - this is a cofig file all the bootstrap configuaration are present in this file.
