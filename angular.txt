@@ -1,2 +1,6 @@
 this document consists of all the informations related to angular 8 
 angular.json - this is a cofig file all the bootstrap configuaration are present in this file.
+karma.conf.js - is used to run test and contains test related data.
+package.json - this file contains all the npm related package 
+package-lock.json - this file contains any changes related to package.josn file if we make any extra changes.
+test.ts- just like the spec test file in each app the main.ts file also contains this file.
