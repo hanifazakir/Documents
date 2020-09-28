@@ -4,3 +4,13 @@ karma.conf.js - is used to run test and contains test related data.
 package.json - this file contains all the npm related package 
 package-lock.json - this file contains any changes related to package.josn file if we make any extra changes.
 test.ts- just like the spec test file in each app the main.ts file also contains this file.
+app.module.ts -we can import formmodule and other respective module in the imports ,providers - this can contain the list of services which we require for this module, bootstrap contains the parent component ts file, export appmodule - this helps in exporting module that can be implemented any other module. while we create a new component this app.module.ts gets updated but the other files are created. 
+main.ts - this has app module this imports the entire app module components.
+index.html - this file has the root component selector in it which points to main.ts which has import of root module(app module). the index.html has the root component selector as a tag in it but if we add new components then we need to add its selectors as a tag to app.component.html inorder to render them.
+this way of hierarchy helps us in loading the module or compoenet which ever we require only thus reducing the loading time (lazyloading)
+comment to generate a component :ng generate compoenent component-name / ng g c component-name.
+after creating a component we need to import into its module.ts file and declare as well in that file/this import can be auto implemented for that we need to install the autoimport extension in vscode.
+onInit{} - this is a construtor in which we can add dependency in them.
+ngonInit():- this is the method to initial a component so if we need some of the initail code to run then need to be given in this construtor.
+ng serve --open - this is to run the code in browser if we give only ng serve then we need to type localhost 4200 in browser but with this its automatically done.
+meta data- it is used to decorate the class and declare class as component to the application. this associate the class with templates. we can declare decorator to the class property and constructor. for property export class appcomponent {@environment('test') appword: string="hello";}. for constructor export class appcomponent { constructor(@environment('test' private appword: string))}
